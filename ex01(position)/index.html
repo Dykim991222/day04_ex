@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex01</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border: 10px solid lime;
+            margin: 50px;
+        }
+
+        #static{
+            position : static;
+            top : 10px;
+        }
+        #relative{
+            position : relative;
+            /* top: -10px; */
+            top : -10px;
+            /* left, right, bottom, top */
+            background-color: orange;
+        }
+        .relative{
+            position:relative;
+            background-color: orange;
+        }
+        .absolute{
+            position: absolute;
+            top : 20px;
+            left : 20px; /* from*/
+            border-color: red;
+            background-color: yellow;
+            /* 얘는 부모를
+             스태틱으로 생각 안함 */
+        }
+        .fixed{
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            background-color: aquamarine;
+        }
+        .sticky{
+            position: sticky;
+            top: 50px;
+            background-color: #ffe0e0;
+            border-color: #98bfeb;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky">스티키</div>
+    <div id="static;">스태틱(static) - 가장 기본</div>
+    <div id="relative;">릴레이티브(relative)</div>
+    <div class="absolute">앱솔</div>
+    <!-- relative : 나를 기준으로 세상이 돌아감. 지멋대로. -->
+    <div class="relative">
+        <div>스태틱</div>
+        <div class="relative">릴레</div>
+        <div class="absolute">앱솔</div>
+    </div>
+    <div class="absolute">앱솔!!</div>
+    <div class="fixed">픽스드</div>
+
+</body>
+</html>

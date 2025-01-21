@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row; /* 기본값: row */
+      justify-content: space-between; /* 요소 간 동일한 간격 */
+      align-items: center; /* 요소를 교차축 중심으로 정렬 */
+      border: 2px solid #ccc;
+      padding: 20px;
+      height: 200px;
+      background-color: #f9f9f9;
+    }
+
+    .item {
+      background: #4caf50;
+      color: white;
+      padding: 20px;
+      font-size: 20px;
+      text-align: center;
+      border-radius: 8px;
+      width: 100px;
+      flex: 1; /* 남은 공간을 동일하게 분배 */
+      margin: 0 10px;
+    }
+
+    .item:nth-child(2) {
+      flex: 2; /* 다른 요소보다 두 배의 공간 차지 */
+      background: #2196f3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Flexbox 실습</h1>
+  <p>아래 예제는 Flexbox를 사용하여 요소를 정렬하고 배치하는 방법을 보여줍니다.</p>
+
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+</body>
+</html>
