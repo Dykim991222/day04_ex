@@ -12,14 +12,21 @@
       property="og:description"
       content="맛있는 제육덮밥을 즐길 수 있는 제육덮밥 전문점입니다. 다양한 메뉴와 함께합니다!"
     />
-    <!-- <meta property="og:image" content="path/to/og-image.jpg" /> -->
+    <meta property="og:image" content="https://github.com/qus0in/bs_sample/blob/main/korean_soul.jpg?raw=true" />
 
     <!-- https://realfavicongenerator.net/ -->
     <!-- Favicon 위치 -->
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
     <!-- <link rel="icon" href="path/to/favicon.ico" type="image/x-icon" /> -->
 
     <title>제육덮밥 집</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <!-- https://fonts.google.com/?lang=ko_Kore -->
     <!-- Webfont 추가 위치 -->
     <!-- <link
@@ -39,8 +46,9 @@
     <style>
       /* 색상 설정 */
       body {
-        font-family: "Noto Sans KR", sans-serif;
+        font-family: "Nanum Pen Script", serif;
         background-color: #ffdfde;
+        font-style: normal;
       }
 
       .navbar {
@@ -89,7 +97,7 @@
     <!-- 네비게이션 바 -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">제육덮밥 집</a>
+        <a class="navbar-brand" href="#">여행이 가고싶어요</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -104,7 +112,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">메뉴</a>
+              <a class="nav-link" href="#">위치</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">소개</a>
@@ -125,13 +133,13 @@
     >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="01.jpg" class="d-block w-100" alt="제육덮밥 이미지 1" />
+          <img src="1.jpg" class="d-block w-100" alt="자연1" />
         </div>
         <div class="carousel-item">
-          <img src="02.jpg" class="d-block w-100" alt="제육덮밥 이미지 2" />
+          <img src="2.jpg" class="d-block w-100" alt="자연2" />
         </div>
         <div class="carousel-item">
-          <img src="03.jpg" class="d-block w-100" alt="제육덮밥 이미지 3" />
+          <img src="3.jpg" class="d-block w-100" alt="자전거" />
         </div>
       </div>
       <button
@@ -159,10 +167,10 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card">
-            <img src="01.jpg" class="card-img-top" alt="카드 이미지 1" />
+            <img src="1.jpg" class="card-img-top" alt="카드 이미지 1" />
             <div class="card-body">
-              <h5 class="card-title">제육덮밥 A</h5>
-              <p class="card-text">매콤한 제육덮밥 A, 풍미 가득한 맛!</p>
+              <h5 class="card-title">산</h5>
+              <p class="card-text">물좋고 공기좋고~</p>
               <a
                 href="#"
                 class="btn btn-custom"
@@ -175,11 +183,11 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="02.jpg" class="card-img-top" alt="카드 이미지 2" />
+            <img src="2.jpg" class="card-img-top" alt="카드 이미지 2" />
             <div class="card-body">
-              <h5 class="card-title">제육덮밥 B</h5>
+              <h5 class="card-title">자연사진 2</h5>
               <p class="card-text">
-                매콤하고 부드러운 제육덮밥 B, 최고의 조합!
+                자연 좋지..!
               </p>
               <a
                 href="#"
@@ -193,10 +201,10 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="03.jpg" class="card-img-top" alt="카드 이미지 3" />
+            <img src="3.jpg" class="card-img-top" alt="카드 이미지 3" />
             <div class="card-body">
-              <h5 class="card-title">제육덮밥 C</h5>
-              <p class="card-text">진한 맛을 자랑하는 제육덮밥 C!</p>
+              <h5 class="card-title">자전거</h5>
+              <p class="card-text">자전거타고싶다!</p>
               <a
                 href="#"
                 class="btn btn-custom"
@@ -221,7 +229,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalDetailLabel">제육덮밥 A</h5>
+            <h5 class="modal-title" id="modalDetailLabel">여행</h5>
             <button
               type="button"
               class="btn-close"
@@ -230,8 +238,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            제육덮밥 A의 자세한 설명을 여기에 추가합니다. 더 맛있게 만드는
-            비법도 확인하세요!
+            여행가고싶다...
           </div>
           <div class="modal-footer">
             <button
